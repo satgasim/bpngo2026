@@ -22,7 +22,7 @@
 -->
 <style>
 :root {
-  --biru:        #033566;
+  --biru1:       #033566;
   --biru2:       #03305C;
   --emas-terang: #F8DBA1;
   --emas:        #BD934C;
@@ -33,13 +33,13 @@
   --nav-h:       56px;
 }
 * { margin:0; padding:0; box-sizing:border-box; }
-body { font-family:'Poppins',sans-serif; background:var(--biru2); color:var(--hijau); height:100vh; overflow:hidden; }
+body { font-family:'Poppins',sans-serif; background:var(--putih); color:var(--hijau); height:100vh; overflow:hidden; }
 ::-webkit-scrollbar { width:4px; height:4px; }
 ::-webkit-scrollbar-track { background:rgba(0,0,0,.2); }
 ::-webkit-scrollbar-thumb { background:rgba(189,147,76,.4); border-radius:2px; }
 
 /* NAVBAR */
-.navbar { position:fixed; top:0; left:0; right:0; height:var(--nav-h); background:var(--biru); border-bottom:1px solid rgba(189,147,76,.3); display:flex; align-items:center; padding:0 16px; z-index:1000; gap:12px; }
+.navbar { position:fixed; top:0; left:0; right:0; height:var(--nav-h); background:var(--biru1); border-bottom:1px solid rgba(189,147,76,.3); display:flex; align-items:center; padding:0 16px; z-index:1000; gap:12px; }
 .nav-logo { display:flex; align-items:center; gap:8px; cursor:pointer; flex-shrink:0; }
 .nav-logo-ikon { width:32px; height:32px; background:var(--emas); border-radius:8px; display:flex; align-items:center; justify-content:center; font-size:16px; }
 .nav-logo-teks { font-size:12px; font-weight:700; color:var(--hijau); line-height:1.2; }
@@ -58,7 +58,7 @@ body { font-family:'Poppins',sans-serif; background:var(--biru2); color:var(--hi
 .halaman.aktif { display:flex; }
 
 /* PAGE HEADER */
-.hal-header { background:linear-gradient(135deg,var(--biru),var(--biru2)); padding:14px 24px; border-bottom:2px solid var(--emas); flex-shrink:0; }
+.hal-header { background:linear-gradient(135deg,var(--biru1),var(--putih)); padding:14px 24px; border-bottom:2px solid var(--emas); flex-shrink:0; }
 .hal-header-badge { font-size:10px; font-weight:700; color:var(--emas); letter-spacing:1.5px; text-transform:uppercase; margin-bottom:3px; }
 .hal-header h2 { font-size:clamp(17px,3vw,26px); font-weight:800; color:var(--emas-terang); line-height:1.2; }
 .hal-header p  { font-size:11.5px; color:rgba(255,255,255,.55); margin-top:3px; }
@@ -90,7 +90,7 @@ body { font-family:'Poppins',sans-serif; background:var(--biru2); color:var(--hi
 .matrix-y-menu { width:186px; flex-shrink:0; background:rgba(2,22,48,.85); border-right:1px solid rgba(189,147,76,.2); display:flex; flex-direction:column; padding:10px 8px; gap:3px; overflow-y:auto; }
 .matrix-y-item { padding:10px 12px; border-radius:8px; cursor:pointer; transition:all .2s; display:flex; align-items:center; gap:9px; border-left:3px solid transparent; }
 .matrix-y-item:hover { background:rgba(255,255,255,.05); }
-.matrix-y-item.aktif { background:var(--biru); border-left-color:var(--emas); }
+.matrix-y-item.aktif { background:var(--biru1); border-left-color:var(--emas); }
 .matrix-y-ikon  { font-size:15px; flex-shrink:0; }
 .matrix-y-label { font-size:11.5px; font-weight:600; line-height:1.3; color:rgba(255,255,255,.5); }
 .matrix-y-item.aktif .matrix-y-label { color:var(--emas-terang); }
@@ -115,17 +115,17 @@ body { font-family:'Poppins',sans-serif; background:var(--biru2); color:var(--hi
 .app-card { background:rgba(3,53,102,.38); border:1px solid rgba(189,147,76,.22); border-radius:13px; padding:18px; }
 .app-card h3 { font-size:14px; font-weight:700; color:var(--emas-terang); margin-bottom:12px; }
 .app-hero { display:flex; align-items:center; gap:12px; margin-bottom:14px; }
-.app-icon { width:52px; height:52px; background:linear-gradient(135deg,var(--biru),#0060b0); border-radius:13px; display:flex; align-items:center; justify-content:center; font-size:24px; flex-shrink:0; }
+.app-icon { width:52px; height:52px; background:linear-gradient(135deg,var(--biru1),#0060b0); border-radius:13px; display:flex; align-items:center; justify-content:center; font-size:24px; flex-shrink:0; }
 .app-info h3 { font-size:17px; font-weight:800; color:var(--hijau); margin:0 0 3px; }
 .app-info p  { font-size:11px; color:rgba(255,255,255,.5); margin-bottom:2px; }
-.btn-download { display:flex; align-items:center; gap:10px; background:var(--biru); border:1px solid rgba(189,147,76,.32); border-radius:9px; padding:9px 13px; cursor:pointer; transition:all .2s; text-decoration:none; width:100%; margin-bottom:8px; font-family:inherit; }
+.btn-download { display:flex; align-items:center; gap:10px; background:var(--biru1); border:1px solid rgba(189,147,76,.32); border-radius:9px; padding:9px 13px; cursor:pointer; transition:all .2s; text-decoration:none; width:100%; margin-bottom:8px; font-family:inherit; }
 .btn-download:hover { background:rgba(189,147,76,.18); border-color:var(--emas); }
 .btn-download-ikon  { font-size:18px; }
 .btn-download-text  { font-size:10px; color:rgba(255,255,255,.6); line-height:1.2; }
 .btn-download-label { font-size:13px; font-weight:700; color:var(--emas-terang); }
 .langkah-list { display:flex; flex-direction:column; gap:8px; }
 .langkah-item { display:flex; gap:11px; align-items:flex-start; }
-.langkah-no { width:26px; height:26px; background:var(--biru); border:1px solid rgba(189,147,76,.4); border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:11px; font-weight:800; color:var(--emas-terang); flex-shrink:0; }
+.langkah-no { width:26px; height:26px; background:var(--biru1); border:1px solid rgba(189,147,76,.4); border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:11px; font-weight:800; color:var(--emas-terang); flex-shrink:0; }
 .langkah-teks { font-size:12.5px; color:rgba(255,255,255,.82); padding-top:4px; line-height:1.5; }
 .faq-list { display:flex; flex-direction:column; gap:6px; }
 .faq-item { background:rgba(3,53,102,.28); border:1px solid rgba(189,147,76,.15); border-radius:8px; overflow:hidden; }
@@ -178,7 +178,7 @@ body { font-family:'Poppins',sans-serif; background:var(--biru2); color:var(--hi
 /* INSTAGRAM MODAL */
 .ig-modal { display:none; position:fixed; inset:0; background:rgba(0,0,0,.85); z-index:2000; align-items:center; justify-content:center; padding:20px; }
 .ig-modal.buka { display:flex; }
-.ig-modal-box { background:var(--biru2); border:1px solid var(--emas); border-radius:14px; padding:20px; width:100%; max-width:420px; position:relative; }
+.ig-modal-box { background:var(--putih); border:1px solid var(--emas); border-radius:14px; padding:20px; width:100%; max-width:420px; position:relative; }
 .ig-modal-tutup { position:absolute; top:10px; right:13px; background:none; border:none; color:var(--emas-terang); font-size:18px; cursor:pointer; font-family:inherit; }
 .ig-modal-isi { text-align:center; padding:14px 0; }
 .ig-modal-ikon  { font-size:38px; margin-bottom:10px; }
